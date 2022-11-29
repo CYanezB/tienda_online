@@ -1,0 +1,54 @@
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/available
+
+###
+GET http://localhost:3000/api/products/oficina
+###
+GET http://localhost:3000/api/products/min/5
+
+###
+GET http://localhost:3000/api/products/min/30/max/200
+
+### 
+GET http://localhost:3000/api/products/stock/10
+
+###
+GET http://localhost:3000/api/products/6384acabccccd4a07d142b29
+
+###
+GET http://localhost:3000/api/clients
+
+###
+GET http://localhost:3000/api/clients/6385f6580b53b0b0384f2ec6/product/6384acabccccd4a07d142b29
+
+
+###
+POST http://localhost:3000/api/clients
+Content-Type: application/json
+
+{
+
+  "name": "Prueba",
+  "email": "prueba@gmail.com",
+  "adress": "calle prueba",
+  "age": 69,
+  "active": false
+
+}
+
+###
+PUT http://localhost:3000/api/clients/6385edd4173f47db29558f9c
+Content-Type: application/json
+
+{
+    "age": 30,
+    "active": true
+}
+
+###
+DELETE  http://localhost:3000/api/clients/6385edd4173f47db29558f9c
+
+###
+GET https://8c4e-2a0c-5a80-1013-ab00-5d6b-a7ad-2bef-d865.eu.ngrok.io/api/clients
